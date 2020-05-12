@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://i.imgur.com/icm7WSe.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
+    font-family: Arial;
+  }
+  
+  .menu{
+    border-bottom: 3px solid #eedaaa;
+    height: 50px;
+    margin: 0px;
+    padding: px;
+    
+  }
+  
+  .menu ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    margin: 10;
+    padding: 10;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: #3a3834;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  a:hover {
+  text-decoration: underline;
+  color: #eedaaa;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: #3a3834;
+    text-align: center;
+  }
