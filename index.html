@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav class="menu">
-          <ul>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#nenes">NENÊS</a></li>
+          <ul class="container">
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#personagens">PERSONAGENS</a></li>
             <li><a href="#contato">CONTATO</a></li>
           </ul>
         </nav>
@@ -34,37 +34,123 @@
             <h2 class="site-subtitle">I'm no Jedi.</h2>
         </div>
     </header>
-    <section class="portfolio">
-    <a name="Fotos" id="nenes"></a>
-        <h2>Nenês</h2>
+    <section class="sobre container" id="sobre">
+      <a name="Sobre"></a>
+      <h2>SOBRE</h2>
+
+      <div class="grid-avatar">
+        <figure class="avatar">
+          <img class="img-avatar"src="./img/biacosta.jpg" alt="Bia Costa">
+        </figure>
+      </div>
+      <div class="about">
+        <p>Oi! Sou a Bia. Tenho 27 anos e sempre gostei muito de programação. Nunca tive nenhuma experiência muito séria com isso, a não ser na época do Orkut (saudades Orkut!), quando eu passava horas e horas criando e editando perfis em HTML pra mim e pra mais um monte de gente. KKKKKKKK Tive a fase do Tumblr também, onde a minha maior diversão era caçar vários templates que a galera disponibilizava e modificar eles inteiros.</p>
+
+        <p>Apesar de já saber que eu sempre gostei de programação, agradeço a vocês pela oportunidade de passar esses cinco dias de fato estudando e aprendendo a fazer alguma coisa do zero, essa experiência só me fez ficar ainda mais apaixonada por isso. Vocês são incríveis! 💚</p>
+  
+        <p>Há! E é claro que eu não poderia deixar de agradecer e parabenizar essa galera toda que fez o curso junto comigo. Fiquei acompanhando tudo que foi possível dos resultados de vocês e confesso que em alguns momentos vocês me ajudaram muito a resolver os problemas que iam aparecendo! Fico feliz de ter participado disso junto com tanta gente legal. 💜</p>
+  
+        <p>Este site foi criado durante a <a href="http://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>! ⌨ 💻 📱</p>
+      </div>
+    </section>
+    <section class="portfolio container"  id="personagens">
+    <a name="Personagens"></a>
+        <h2>Personagens</h2>
         <div class="grid">
-          <figure>
-           <img class="img-portfolio" src="./img/1.jpg" alt="Soberana">
-           <figcaption>Soberana</figcaption>
-          </figure>
-          <figure>
-           <img class="img-portfolio" src="./img/2.jpg" alt="Loko">
-           <figcaption>Loko</figcaption>
-          </figure>
-          <figure>
-           <img class="img-portfolio" src="./img/3.jpg" alt="Afrontosa">
-           <figcaption>Afrontosa</figcaption>
-          </figure>
-          <figure>
-           <img class="img-portfolio" src="./img/4.jpg" alt="Paternidade">
-           <figcaption>Paternidade</figcaption>
-          </figure>
-          <figure>
-           <img class="img-portfolio" src="./img/5.jpg" alt="Fight">
-           <figcaption>Fight</figcaption>
-          </figure>
-          <figure>
-           <img class="img-portfolio" src="./img/6.png" alt="Perfeita">
-           <figcaption>Perfeita</figcaption>
-          </figure>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/1.jpg" alt="Padmé Amidala">
+               </figure>
+               <div class="card-back">
+                <h3>Padmé Amidala
+                  <br>
+                  Rainha injustiçada.
+                  Dizem que morreu de tristeza, mas o marido tava bem loko e a atacou.
+                </h3>
+               </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/2.jpg" alt="Anakin Skywalker">
+               </figure>
+               <div class="card-back">
+                <h3>Anakin Skywalker
+                  <br>
+                  Falso prodígio.
+                  Nasceu com a promessa de ser o equilíbrio da força, no final matou todo mundo.
+                </h3>
+               </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/3.jpg" alt="Leia Organa">
+               </figure>
+               <div class="card-back">
+                <h3>Leia Organa
+                  <br>
+                  Fada Sensata.
+                  Princesa que depois virou general, nunca parou de lutar pela justiça.
+                </h3>
+               </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/4.jpg" alt="Luke Skywalker">
+               </figure>
+               <div class="card-back">
+                <h3>Luke Skywalker
+                  <br>
+                  Menino sofrido.
+                  Sofreu a vida inteira e nunca conseguiu um minuto de paz.
+                </h3>
+               </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/5.jpg" alt="Kylo e Rey">
+               </figure>
+               <div class="card-back">
+                <h3>Kylo e Rey
+                  <br>
+                  Dois perdidos.
+                  Passaram a vida inteira tentando encontrar um rumo. No final virou Reylo.
+                </h3>
+               </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/6.png" alt="Ahsoka Tano">
+               </figure>
+               <div class="card-back">
+                <h3>Ahsoka Tano
+                  <br>
+                  Zero defeitos.
+                  Largou a ordem Jedi pois sabia que eles só faziam bosta.
+                  <br>Um acerto atrás do outro.
+                </h3>
+               </div>
+            </div>
+          </div>
+          
         </div>   
     </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
       <h2>Contato</h2>
       <div class="grid icons">
         <a target="_blank" href="https://github.com/abiacosta">
