@@ -73,7 +73,7 @@ body {
     text-decoration: underline;
     color: #eedaaa;
   }
-
+  
   .start {
       position: relative;
       width: 16em;
@@ -82,6 +82,7 @@ body {
       margin: 20% auto;
       color: #aeefff;
       opacity: 0;
+      z-index: 1;
       -webkit-animation: intro 2s ease-out;
       animation: intro 2s ease-out;
   }
@@ -117,7 +118,7 @@ body {
           opacity: 0;
       }
   }
-
+  
   .img-sw {
       position: absolute;
       left: 20%;
@@ -132,7 +133,8 @@ body {
   @media (max-width: 600px) {
     .img-sw {
         height: 20vh;
-        left: 9%;
+        left: auto;
+        right: auto;
         top: 40%;
     }
   }
@@ -185,9 +187,28 @@ body {
         font-size: 110%;
         letter-spacing: 5px;
         line-height: 50px;
-        margin-left: -47%;
-        -webkit-transform: perspective(400px) rotateX(25deg);
-        transition: perspective(400px) rotateX(25deg);
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+    }
+  }
+
+  @media (min-width: 600px) {
+    .texto {
+        font-size: 200%;
+        letter-spacing: 7.5px;
+        line-height: 75px;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .texto {
+        font-size: 300%;
+        letter-spacing: 10px;
+        line-height: 100px;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
     }
   }
 
@@ -214,6 +235,8 @@ body {
   .episodio h2,
   .episodio h1 {
       text-align: center;
+      left: auto;
+      right: auto;
   }
 
   .episodio h2 {
@@ -242,13 +265,15 @@ body {
   .site-title {
     color: #eedaaa;
     position: absolute;
+    justify-content: center;
+    align-content: center;
     left: 40%;
     top: 50%;
     line-height: 200px;
     opacity: 0;
     z-index: 1;
-    -webkit-animation: nome 4s linear 43s forwards;
-    animation: nome 4s linear 43s forwards;
+    -webkit-animation: nome 4s linear 35s forwards;
+    animation: nome 4s linear 35s forwards;
   }
 
   @media (max-width: 600px) {
@@ -345,12 +370,11 @@ body {
     justify-content: center;
     border: 0;
     grid-template-columns: 250px;
-
   }
 
   @media (min-width: 560px) {
     .portfolio .grid {
-      grid-template-columns: 250px;
+      grid-template-columns: repeat(2, 250px);
       align-content: center;
       justify-content: center;
     }
@@ -375,6 +399,7 @@ body {
   }
 
   .img-portfolio {
+    border-radius: 15%;
     width: 250px;
     height: 200px;
     object-fit: cover;
@@ -410,6 +435,10 @@ body {
   }
 
   .card-back {
+    box-shadow: 0px 0px 3px 5px #eedaaa;
+    border-radius: 15%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     text-align: center;
     display: flex;
     align-items: center;
@@ -504,6 +533,6 @@ body {
   .contato a:active,
   .contato a:hover {
     text-decoration: none;
-    text-shadow: 0px 3px 8px #3a3834;
+    text-shadow: 3px 3px 3px #3a3834;
   }
   
